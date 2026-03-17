@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 
 import treatment1 from "@/assets/gallery/treatment-1.webp";
 import treatment2 from "@/assets/gallery/treatment-2.webp";
+import treatment3 from "@/assets/gallery/treatment-3.jpg";
 import clinicBanner from "@/assets/gallery/clinic-banner.webp";
 import reception from "@/assets/gallery/reception.webp";
 import dentalChair from "@/assets/gallery/dental-chair.webp";
@@ -13,19 +14,28 @@ import orthodontics from "@/assets/gallery/orthodontics.webp";
 import signage from "@/assets/gallery/signage.webp";
 import exterior from "@/assets/gallery/exterior.jpg";
 import waitingArea from "@/assets/gallery/waiting-area.jpg";
+import waitingArea2 from "@/assets/gallery/waiting-area-2.jpg";
 import operatory from "@/assets/gallery/operatory.jpg";
+import frontDesk from "@/assets/gallery/front-desk.jpg";
+import entranceSign from "@/assets/gallery/entrance-sign.jpg";
 
 const images = [
   { src: exterior, alt: "Rubi Smile Dental Clinic exterior", category: "Clinic" },
-  { src: waitingArea, alt: "Comfortable waiting area", category: "Clinic" },
-  { src: operatory, alt: "Modern dental operatory with digital equipment", category: "Equipment" },
+  { src: entranceSign, alt: "Dental clinic entrance signage", category: "Clinic" },
+  { src: clinicBanner, alt: "Rubi Smile Dental Clinic banner and services", category: "Clinic" },
+  { src: signage, alt: "Dental services signage", category: "Clinic" },
+  { src: waitingArea, alt: "Comfortable waiting area with seating", category: "Waiting & Reception" },
+  { src: waitingArea2, alt: "Spacious waiting lounge with water dispenser", category: "Waiting & Reception" },
+  { src: reception, alt: "Reception area with dental model display", category: "Waiting & Reception" },
+  { src: frontDesk, alt: "Front desk with friendly decor", category: "Waiting & Reception" },
+  { src: operatory, alt: "Modern dental operatory with digital equipment", category: "Surgery Rooms" },
+  { src: dentalChair, alt: "Dental chair and treatment room", category: "Surgery Rooms" },
+  { src: operatory, alt: "Fully equipped surgery suite — digital imaging", category: "Surgery Rooms" },
+  { src: dentalChair, alt: "State-of-the-art dental unit", category: "Surgery Rooms" },
   { src: treatment1, alt: "Dental treatment in progress", category: "Treatment" },
   { src: treatment2, alt: "Professional dental care by our team", category: "Treatment" },
-  { src: clinicBanner, alt: "Rubi Smile Dental Clinic banner and services", category: "Clinic" },
-  { src: reception, alt: "Front desk and reception area", category: "Clinic" },
-  { src: dentalChair, alt: "Dental chair and treatment room", category: "Equipment" },
+  { src: treatment3, alt: "Expert dental procedure with assistant", category: "Treatment" },
   { src: orthodontics, alt: "Orthodontic braces treatment result", category: "Treatment" },
-  { src: signage, alt: "Dental services signage", category: "Clinic" },
 ];
 
 const categories = ["All", ...Array.from(new Set(images.map((img) => img.category)))];
@@ -81,14 +91,14 @@ const Gallery = () => {
             <AnimatePresence mode="popLayout">
               {filtered.map((img, i) => (
                 <motion.div
-                  key={img.src}
+                  key={`${img.alt}-${i}`}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.35, delay: i * 0.04 }}
                   className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-muted"
-                  onClick={() => setSelected(images.indexOf(img))}
+                  onClick={() => setSelected(images.findIndex((x) => x.alt === img.alt))}
                 >
                   <img
                     src={img.src}
