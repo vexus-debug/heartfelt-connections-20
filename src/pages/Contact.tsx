@@ -30,7 +30,7 @@ const Contact = () => (
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4 rounded-card bg-muted p-5">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-inner bg-accent/10">
-                    <item.icon className="h-5 w-5 text-teal" />
+                    <item.icon className="h-5 w-5 text-accent" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-bold text-foreground">{item.label}</div>

@@ -210,7 +210,7 @@ const Index = () => (
       <div className="container mx-auto px-6 text-center">
         <SectionReveal>
           <h2 className="font-display text-4xl font-extrabold text-primary-foreground">
-            Ready for a <span className="text-primary">brighter</span> smile?
+            Ready for a <span className="text-accent">brighter</span> smile?
           </h2>
           <p className="font-body text-primary-foreground/70 mt-4 max-w-xl mx-auto leading-relaxed">
             Book your appointment today. Walk-ins welcome for emergencies.

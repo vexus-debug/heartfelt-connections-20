@@ -53,7 +53,7 @@ const About = () => (
             <SectionReveal key={v.title} delay={i * 0.1}>
               <div className="rounded-card bg-background p-8 shadow-card text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-inner bg-accent/10">
-                  <v.icon className="h-6 w-6 text-teal" />
+                  <v.icon className="h-6 w-6 text-accent" />
                 </div>
                 <h3 className="font-display text-base font-bold text-foreground">{v.title}</h3>
                 <p className="font-body text-sm text-muted-foreground mt-2">{v.desc}</p>
