@@ -8,7 +8,7 @@ const Footer = () => (
         <div>
           <h3 className="font-display text-xl font-bold mb-4">Rubi Smile</h3>
           <p className="font-body text-sm leading-relaxed opacity-70">
-            Expert dental care that feels like family. Modern, gentle dentistry in the heart of Karu, Abuja.
+            Expert dental care that feels like family. Modern, gentle dentistry at No 6 November Street, Chief Palace Estate, Karu, Abuja.
           </p>
         </div>
 
