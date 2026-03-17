@@ -19,6 +19,7 @@ import dentalChair from "@/assets/gallery/dental-chair.webp";
 import operatory from "@/assets/gallery/operatory.jpg";
 import treatment1 from "@/assets/gallery/treatment-1.webp";
 import treatment2 from "@/assets/gallery/treatment-2.webp";
+import personalizedCare from "@/assets/gallery/personalized-care.jpg";
 import treatment3 from "@/assets/gallery/treatment-3.jpg";
 import clinicBanner from "@/assets/gallery/clinic-banner.webp";
 import entranceSign from "@/assets/gallery/entrance-sign-new.jpg";
@@ -58,7 +59,7 @@ const testimonials = [
 const faqs = [
   { q: "Do you accept NHIS insurance?", a: "Yes! We accept NHIS for eligible treatments including routine checkups, fillings, and extractions. Bring your NHIS card to your appointment." },
   { q: "Is the first consultation free?", a: "We offer affordable initial consultations. Contact us for current pricing and any ongoing promotions for new patients." },
-  { q: "How do I book an appointment?", a: "You can book via WhatsApp, phone call, or walk in during our working hours (Mon–Sat, 9AM–5:30PM)." },
+  { q: "How do I book an appointment?", a: "You can book via WhatsApp, phone call, or walk in during our working hours (Mon–Fri, 9AM–5:30PM | Sat, 9AM–3:30PM)." },
   { q: "Do you handle dental emergencies?", a: "Yes, we accommodate dental emergencies during working hours. Call us immediately and we'll prioritize your care." },
   { q: "Is teeth whitening safe?", a: "Absolutely. We use clinically proven, dentist-supervised whitening treatments that are safe for your enamel." },
 ];
@@ -219,7 +220,7 @@ const Index = () => (
                 <img src={waitingArea2} alt="Spacious clinic interior" className="w-full aspect-[4/3] object-cover" />
               </div>
               <motion.div
-                className="absolute -bottom-6 right-6 sm:-bottom-8 sm:right-8 w-[50%] rounded-2xl overflow-hidden shadow-elevated border-4 border-background"
+                className="absolute -bottom-12 right-6 sm:-bottom-16 sm:right-8 w-[45%] rounded-2xl overflow-hidden shadow-elevated border-4 border-background"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -273,7 +274,7 @@ const Index = () => (
           {[
             { icon: Zap, title: "Modern Equipment", desc: "State-of-the-art technology for precise, painless treatments. Digital imaging and sterilized instruments.", gradient: "from-accent/5 to-accent/0", img: dentalChair },
             { icon: Shield, title: "NHIS Accepted", desc: "We accept government insurance for essential dental treatments. Making quality care accessible to all.", gradient: "from-primary/5 to-primary/0", img: clinicBanner },
-            { icon: Heart, title: "Personalized Care", desc: "We take extra efforts to understand your specific needs and provide tailored dental solutions for lasting results.", gradient: "from-accent/5 to-accent/0", img: treatment2 },
+            { icon: Heart, title: "Personalized Care", desc: "We take extra efforts to understand your specific needs and provide tailored dental solutions for lasting results.", gradient: "from-accent/5 to-accent/0", img: personalizedCare },
           ].map((item, i) => (
             <SectionReveal key={item.title} delay={i * 0.15}>
               <div className={`relative rounded-3xl bg-gradient-to-br ${item.gradient} border border-border/50 overflow-hidden transition-all duration-300 hover:shadow-elevated hover:-translate-y-1 group`}>
@@ -535,7 +536,7 @@ const Index = () => (
             <div className="mt-10 space-y-5">
               {[
                 { icon: MapPin, label: "Address", value: "No 6 November Street, Chief Palace Estate, Karu, Abuja", color: "text-primary", bg: "bg-primary/10" },
-                { icon: Clock, label: "Working Hours", value: "Mon – Sat: 9:00 AM – 5:30 PM", sub: "Sunday: Closed", color: "text-accent", bg: "bg-accent/10" },
+                { icon: Clock, label: "Working Hours", value: "Mon – Fri: 9:00 AM – 5:30 PM", sub: "Sat: 9:00 AM – 3:30 PM | Sun: Closed", color: "text-accent", bg: "bg-accent/10" },
                 { icon: Phone, label: "Phone", value: "+234 903 853 5214", color: "text-primary", bg: "bg-primary/10" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">

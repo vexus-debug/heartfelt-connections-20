@@ -39,7 +39,7 @@ const Footer = () => (
               <Phone className="h-4 w-4 shrink-0" /> 0902 440 3837 (Call/Enquiry)
             </a>
             <span className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0" /> rubiismiledentalclinic@gmail.com</span>
-            <span className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 shrink-0" /> Mon – Sat: 9AM – 5:30PM</span>
+            <span className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 shrink-0" /> Mon – Fri: 9AM – 5:30PM | Sat: 9AM – 3:30PM</span>
           </div>
         </div>
 
