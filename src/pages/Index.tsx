@@ -215,12 +215,12 @@ const Index = () => (
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image collage */}
           <SectionReveal>
-            <div className="relative">
+            <div className="flex flex-col gap-4">
               <div className="rounded-3xl overflow-hidden shadow-elevated">
                 <img src={waitingArea2} alt="Spacious clinic interior" className="w-full aspect-[4/3] object-cover" />
               </div>
               <motion.div
-                className="absolute -bottom-12 right-6 sm:-bottom-16 sm:right-8 w-[45%] rounded-2xl overflow-hidden shadow-elevated border-4 border-background"
+                className="w-[45%] rounded-2xl overflow-hidden shadow-elevated border-4 border-background self-end"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
