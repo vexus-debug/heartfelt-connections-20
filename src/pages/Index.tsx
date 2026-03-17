@@ -530,7 +530,7 @@ const Index = () => (
             </p>
             <div className="mt-10 space-y-5">
               {[
-                { icon: MapPin, label: "Address", value: "Karu, Abuja, Nigeria (Near INEC Office)", color: "text-primary", bg: "bg-primary/10" },
+                { icon: MapPin, label: "Address", value: "No 6 November Street, Chief Palace Estate, Karu, Abuja", color: "text-primary", bg: "bg-primary/10" },
                 { icon: Clock, label: "Working Hours", value: "Mon – Sat: 9:00 AM – 5:30 PM", sub: "Sunday: Closed", color: "text-accent", bg: "bg-accent/10" },
                 { icon: Phone, label: "Phone", value: "+234 903 853 5214", color: "text-primary", bg: "bg-primary/10" },
               ].map((item) => (
