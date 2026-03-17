@@ -171,7 +171,7 @@ const Index = () => (
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-teal mt-0.5" />
+                <Clock className="h-5 w-5 text-accent mt-0.5" />
                 <div>
                   <div className="font-display text-sm font-bold text-foreground">Working Hours</div>
                   <div className="font-body text-sm text-muted-foreground">Monday – Saturday: 9:00 AM – 5:30 PM</div>
