@@ -36,7 +36,7 @@ const Index = () => (
             </span>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-[1.1] mb-6">
               Expert dental care that feels like{" "}
-              <span className="text-primary">family</span>.
+              <span className="text-accent">family</span>.
             </h1>
             <p className="font-body text-lg text-primary-foreground/80 leading-relaxed max-w-xl mb-10">
               From routine cleanings to advanced oral surgery, Rubi Smile provides gentle, modern dentistry in the heart of Karu, Abuja.
