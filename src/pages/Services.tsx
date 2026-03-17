@@ -34,7 +34,7 @@ const serviceCategories = [
   {
     icon: Zap,
     title: "Restorative Dentistry",
-    color: "text-teal",
+    color: "text-accent",
     bgColor: "bg-accent/10",
     items: [
       "Root canal therapy (endodontics)",
