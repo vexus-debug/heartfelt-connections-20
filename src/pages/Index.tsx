@@ -115,7 +115,7 @@ const Index = () => (
             >
               Welcome to
               <br />
-              <span className="text-accent">Rubi Smile</span> Dental Care
+              <span className="text-accent">Rubi Smile</span> Dental Clinic
             </motion.h1>
 
             <motion.p
