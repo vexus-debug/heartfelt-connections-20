@@ -87,7 +87,7 @@ const Index = () => (
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="font-display text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
             <h2 className="font-display text-4xl font-extrabold text-foreground mt-3">
-              Gentle dentistry, <span className="text-primary">brilliant</span> results
+              Gentle dentistry, <span className="text-accent">brilliant</span> results
             </h2>
             <p className="font-body text-muted-foreground mt-4 leading-relaxed">
               We combine modern equipment with a compassionate approach to make every visit comfortable.
