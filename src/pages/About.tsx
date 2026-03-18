@@ -166,7 +166,7 @@ const About = () => {
               </div>
               <h3 className="font-display text-2xl font-extrabold text-foreground">Our Vision</h3>
               <p className="font-body text-muted-foreground mt-4 leading-relaxed">
-                To be the most trusted dental clinic in Abuja — known for gentle care, modern facilities, and a genuine commitment to every patient's well-being. We envision a community where quality dental care is within everyone's reach.
+                {(c.vision as string) || "To be the most trusted dental clinic in Abuja — known for gentle care, modern facilities, and a genuine commitment to every patient's well-being. We envision a community where quality dental care is within everyone's reach."}
               </p>
             </div>
           </SectionReveal>
