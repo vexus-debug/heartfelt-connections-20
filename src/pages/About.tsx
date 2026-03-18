@@ -215,8 +215,8 @@ const About = () => {
         </SectionReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {milestones.map((m, i) => (
-            <SectionReveal key={m.year} delay={i * 0.1}>
+          {dbMilestones.map((m: any, i: number) => (
+            <SectionReveal key={m.year || i} delay={i * 0.1}>
               <div className="relative text-center p-6">
                 <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/15 border border-accent/25 mb-4">
                   <span className="font-display text-xs font-bold text-accent">{m.year}</span>
